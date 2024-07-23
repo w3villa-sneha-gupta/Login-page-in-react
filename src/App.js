@@ -3,6 +3,7 @@ import './App.css';
 import Signup from './components/Sign';
 import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import ForgotPassword from './components/ForgotPassword';
+import OtpVerification from './components/OtpVerification';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/" element={<LoginForm/>}/>
       <Route path="/signup"   element={<Signup/>}/>
       <Route path="/forgotPassword" element={<ForgotPassword/>}/>
+      <Route path="/otpVerification" element={<OtpVerification/>}/>
         </Routes>
       </div>
   </Router>

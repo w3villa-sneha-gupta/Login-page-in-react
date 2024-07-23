@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   
@@ -49,12 +50,41 @@ const Login = () => {
             className="password-input-field"
             placeholder="Password"
           />
+          </div>
+          {/* <div class="flex flex-row">
+            <div class="flex">
+              <div>
+            <input type="checkbox"/>
+            </div>
+            <div>
+              <p>Remember me</p>
+            </div>
+         </div>
+           <div>
+          <p>Forgot Password?</p>
         </div>
+        </div>
+        
+        
+       */}
         <button type="submit" className="login-button">
           Login
         </button>
+
+        <p className='or'>-OR-</p>
+        <button type="submit" className="login-gmail-button">
+          Login with google
+        </button>
+        <button type="submit" className="login-gmail-button mt-2 mb-2">
+          Login with Facebook
+        </button>
         <div>
-            <p>Not a member? <span className='span-element'>Signup now</span></p>
+            <p>Not a member? 
+              <Link to="/signup" className="signup-link"><span className='span-element'>Signup now</span></Link>
+              </p>
+        </div>
+        <div>
+          <p className='text-primary'>Forgot Password?</p>
         </div>
       </form>
     </div>
